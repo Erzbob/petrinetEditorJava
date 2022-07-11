@@ -1,0 +1,6 @@
+Die Symbole für die Toolbar stammen von folgenden Quellen, abgerufen am 25.11.2021: 
+	- https://icons8.com/icon/79625/mechanistic-analysis
+	- https://icons8.com/icon/91638/previous
+	- https://icons8.com/icon/91637/next
+	- https://icons8.com/icon/68064/trash
+	- https://icons8.com/icon/61117/reset
