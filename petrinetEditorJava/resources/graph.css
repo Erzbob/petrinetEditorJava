@@ -1,0 +1,690 @@
+/*
+	Dies ist die css-Datei, in der das Layout des Graphen beschrieben ist.
+*/
+
+/*
+	Style-Angabe fuer eine Stelle die nicht hervorgehoben ist
+*/
+graph {
+	padding: 100px;
+	fill-color: rgb(233, 233, 233);
+}
+
+node {
+	size: 30px;
+	fill-color: rgb(255, 255, 255);
+	text-color: rgb(0, 0, 0);
+	text-size: 18;
+	text-offset: 0, -5;
+	stroke-mode: plain;
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angabe fuer eine Stelle die gedrückt wird und die nicht hervorgehoben ist
+*/
+node.pressed {
+	size: 30px;
+	fill-color: rgb(192, 192, 192);
+	text-color: rgb(0, 0, 0);
+	text-size: 18;
+	text-offset: 0, -5;
+	stroke-mode: plain;
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 2px;
+}
+
+/*
+	Style-Angabe fuer eine Stelle die nicht gedrückt wird und die hervorgehoben ist
+*/
+node.placeHighlight {
+	fill-color: rgb(255, 45, 45);
+	text-style: bold;	
+	text-color: white;	
+	stroke-color: rgb(83, 0, 0);
+	stroke-width: 2px;
+}
+
+/*
+	Style-Angabe fuer eine Stelle die gedrückt wird und die hervorgehoben ist
+*/
+node.placeHighlightPressed {
+	fill-color: rgb(160, 0, 0);
+	text-style: bold;
+	text-color: white;
+	stroke-color: rgb(60, 0, 0);
+	stroke-width: 2px;
+}
+
+/*
+	Style-Angabe fuer eine Transition die nicht gedrückt wird und die nicht aktiviert ist
+*/
+node.disabledTransition {
+	shape: box;
+	size: 30px;
+	fill-color: rgb(155, 255, 155);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angabe fuer eine Transition die gedrückt wird und die nicht aktiviert ist
+*/
+node.transitionPressed {
+	shape: box;
+	size: 30px;
+	fill-color: rgb(121, 255, 121);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 2px;
+}
+
+/*
+	Style-Angabe fuer eine Transition die nicht gedrückt wird und die aktiviert ist
+*/
+node.enabledTransition {
+	shape: box;
+	size: 40px;
+	fill-color: rgb(0, 163, 9);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angabe fuer eine Transition die gedrückt wird und die aktiviert ist
+*/
+node.transitionHighlightPressed {
+	shape: box;
+	size: 40px;
+	fill-color: rgb(0, 117, 9);
+	
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 2px;
+}
+
+/*
+	Style-Angaben fuer die Knoten des Erreichbarkeitsgraphen die keine Merkmale haben,
+	mit verschiedenen Breiten von 40 bis 310 Pixel. Damit können alle Knoten mit einer
+	Stelle-Anzahl von eins bis zehn dargestellt werden. bei Knoten mit mehr Stellen wird
+	der Text farblich geändert.
+*/
+node.egNode1 {
+	shape: box;
+	size: 40px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode2 {
+	shape: box;
+	size: 70px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode3 {
+	shape: box;
+	size: 100px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode4 {
+	shape: box;
+	size: 130px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode5 {
+	shape: box;
+	size: 150px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode6 {
+	shape: box;
+	size: 190px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode7 {
+	shape: box;
+	size: 220px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode8 {
+	shape: box;
+	size: 250px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode9 {
+	shape: box;
+	size: 280px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode10 {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(255, 255, 255);
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNode {
+	shape: box;
+	size: 310px, 30px;
+	text-style: bold;	
+	text-color: rgb(0, 0, 0);
+	stroke-color: rgb(255, 255, 255);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angaben fuer die aktuellen Knoten des Erreichbarkeitsgraphen,
+	mit verschiedenen Breiten von 40 bis 310 Pixel. Damit können alle Knoten mit einer
+	Stellen-Anzahl von eins bis zehn dargestellt werden. bei Knoten mit mehr Stellen wird
+	der Text farblich geändert.
+*/
+node.egCurrentNode1 {
+	shape: box;
+	size: 40px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode2 {
+	shape: box;
+	size: 70px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode3 {
+	shape: box;
+	size: 100px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode4 {
+	shape: box;
+	size: 130px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode5 {
+	shape: box;
+	size: 160px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode6 {
+	shape: box;
+	size: 190px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode7 {
+	shape: box;
+	size: 220px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode8 {
+	shape: box;
+	size: 250px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode9 {
+	shape: box;
+	size: 280px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode10 {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egCurrentNode {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(255, 255, 255);
+	text-color: rgb(0, 223, 17);
+	text-style: bold;		
+	stroke-color: rgb(255, 255, 255);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angaben fuer die Anfangsknoten des Erreichbarkeitsgraphen,
+	mit verschiedenen Breiten von 40 bis 310 Pixel. Damit können alle Knoten mit einer
+	Stellen-Anzahl von eins bis zehn dargestellt werden. bei Knoten mit mehr Stellen wird
+	der Text farblich geändert.
+*/
+node.egInitialNode1 {
+	shape: box;
+	size: 40px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode2 {
+	shape: box;
+	size: 70px, 30px;
+	/*fill-color: rgb(196, 255, 200);*/
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode3 {
+	shape: box;
+	size: 100px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode4 {
+	shape: box;
+	size: 130px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode5 {
+	shape: box;
+	size: 160px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode6 {
+	shape: box;
+	size: 190px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode7 {
+	shape: box;
+	size: 220px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode8 {
+	shape: box;
+	size: 250px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode9 {
+	shape: box;
+	size: 280px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode10 {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(192, 192, 192);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egInitialNode {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(255, 255, 255);
+	text-color: rgb(137, 109, 1);
+	text-style: bold;		
+	stroke-color: rgb(255, 255, 255);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angaben fuer die Knoten m des Erreichbarkeitsgraphen,
+	mit verschiedenen Breiten von 40 bis 310 Pixel. Damit können alle Knoten mit einer
+	Stellen-Anzahl von eins bis zehn dargestellt werden. bei Knoten mit mehr Stellen wird
+	der Text farblich geändert.
+*/
+node.egNodeM1 {
+	shape: box;
+	size: 40px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM2 {
+	shape: box;
+	size: 70px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM3 {
+	shape: box;
+	size: 100px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM4 {
+	shape: box;
+	size: 130px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM5 {
+	shape: box;
+	size: 160px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM6 {
+	shape: box;
+	size: 190px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM7 {
+	shape: box;
+	size: 220px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM8 {
+	shape: box;
+	size: 250px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM9 {
+	shape: box;
+	size: 280px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM10 {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(253, 230, 149);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeM {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(255, 255, 255);
+	text-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(255, 255, 255);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angaben fuer die Knoten m' des Erreichbarkeitsgraphen,
+	mit verschiedenen Breiten von 40 bis 310 Pixel. Damit können alle Knoten mit einer
+	Stellen-Anzahl von eins bis zehn dargestellt werden. bei Knoten mit mehr Stellen wird
+	der Text farblich geändert.
+*/
+node.egNodeGreaterM1 {
+	shape: box;
+	size: 40px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM2 {
+	shape: box;
+	size: 70px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM3 {
+	shape: box;
+	size: 100px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM4 {
+	shape: box;
+	size: 130px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM5 {
+	shape: box;
+	size: 160px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM6 {
+	shape: box;
+	size: 190px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM7 {
+	shape: box;
+	size: 220px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM8 {
+	shape: box;
+	size: 250px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM9 {
+	shape: box;
+	size: 280px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM10 {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(192, 150, 3);
+	text-style: bold;		
+	stroke-color: rgb(0, 0, 0);
+	stroke-width: 1px;
+}
+
+node.egNodeGreaterM {
+	shape: box;
+	size: 310px, 30px;
+	fill-color: rgb(255, 255, 255);
+	text-color: rgb(255, 128, 128);
+	text-style: bold;		
+	stroke-color: rgb(255, 255, 255);
+	stroke-width: 1px;
+}
+
+/*
+	Style-Angabe fuer eine Kante
+*/
+edge {
+	fill-color: rgb(0, 128, 192);
+	text-color: rgb(0, 196, 196);
+	arrow-shape: arrow;
+	arrow-size: 9px, 6px;
+	text-size:  16;
+	text-offset: 0,-20;
+}
+
+edge.currentEdge {
+	fill-color: rgb(0, 0, 0);
+	text-color: rgb(0, 64, 0);
+	arrow-shape: arrow;
+	arrow-size: 9px, 6px; 
+	shadow-mode: plain;
+	shadow-color: rgb(0, 187, 0);
+	shadow-width: 6px;
+	shadow-offset: 0px;
+	text-size:  16;
+}
+/*
+	Style-Angabe fuer eine Kante die zum unbeschränkten Pfad im Erreichbarkeits-Graph gehört
+*/
+edge.unlimitedPath {
+	fill-color: rgb(0, 0, 0);
+	text-color: #003366;
+	arrow-shape: arrow;
+	arrow-size: 9px, 6px; 
+	shadow-mode: plain;
+	shadow-color: rgb(0, 128, 128);
+	shadow-width: 6px;
+	shadow-offset: 0px;
+	text-size:  16;
+	
+}
+
+/*
+	Style-Angabe fuer ein Sprite, dass als Label für eine Kante benutzt wird
+*/
+sprite.edgeLabel {
+	shape: box;
+	fill-color: rgb(0, 196, 196);
+	size: 60, 20;
+	text-size:  16;
+	text-alignment: center;
+	text-offset: 0, -4;
+}
+
+/*
+	Style-Angabe fuer ein Sprite, dass als Label für eine Stelle benutzt wird
+*/
+sprite.nodeLabel {
+	shape: box;
+	fill-color: rgb(255, 255, 255);
+	size: 0,0;
+	text-size:  16;
+	text-alignment: center;
+	text-offset: 0,25;
+}

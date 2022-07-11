@@ -1,0 +1,1 @@
+java -jar Petrinets_3208133_Herzog_Richard.jar
